@@ -30,6 +30,9 @@ type QRData struct {
 	// This field is the highest-valued data type found in the QR code.
 	DataType int
 
+	// The four corners of the QR-code, from top left, clockwise
+	corners [4]point
+
 	// Data Payload. For the Kanji datatype, Payload is encoded as
 	// Shift-JIS. For all other datatypes, Payload is ASCII text.
 	Payload []uint8
@@ -131,6 +134,8 @@ func decode(code *qrCode, data *QRData) error {
 	if err != nil {
 		return err
 	}
+
+	data.corners = code.corners
 
 	readData(code, data, &ds)
 

@@ -1,3 +1,4 @@
+Forked from https://github.com/liyue201/goqr. Thank you, stirlingx!
 # goqr
 [![GoDoc](https://godoc.org/github.com/liyue201/goqr?status.svg)](https://godoc.org/github.com/liyue201/goqr)
 [![Go Report Card](https://goreportcard.com/badge/github.com/liyue201/goqr)](https://goreportcard.com/report/github.com/liyue201/goqr)
