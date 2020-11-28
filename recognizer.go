@@ -314,7 +314,7 @@ func (q *recognizer) recordCapstone(ring, stone int) {
 	stoneReg.capstone = csIndex
 	ringReg.capstone = csIndex
 
-	// Find the corners of the ring
+	// Find the Corners of the ring
 	q.findRegionCorners(ring, &stoneReg.seed, capstone.corners[:])
 
 	// Set up the perspective transform and find the center
@@ -449,7 +449,7 @@ func (q *recognizer) findAlignmentPattern(index int) {
 	// Grab our previous estimate of the alignment pattern corner
 	b = qr.align
 
-	// Guess another two corners of the alignment pattern so that we
+	// Guess another two Corners of the alignment pattern so that we
 	// can estimate its size.
 
 	perspectiveUnmap(c0.c[:], &b, &u, &v)
@@ -763,7 +763,7 @@ func findLeftMostToLine(userData interface{}, y, left, right int) {
 
 // Try the measure the timing pattern for a given QR code. This does
 // not require the global perspective to have been set up, but it
-// does require that the capstone corners have been set to their
+// does require that the capstone Corners have been set to their
 // canonical rotation.
 //
 // For each capstone, we find a point in the middle of the ring band
